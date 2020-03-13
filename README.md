@@ -56,3 +56,7 @@ L'envoi des tweets dans HDFS se fait via un script bash qui va renommer les fich
   Cette règle va permettre d'executer le script toutes les 10 minutes et donc de pouvoir envoyer les tweets vers HDFS régulièrement.
 
 ## Spark
+Pour spark actuellement il faut lancer le script via la commande suivante:
+```shell
+source run_spark.sh
+```
