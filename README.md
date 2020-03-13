@@ -56,7 +56,9 @@ L'envoi des tweets dans HDFS se fait via un script bash qui va renommer les fich
   Cette règle va permettre d'executer le script toutes les 10 minutes et donc de pouvoir envoyer les tweets vers HDFS régulièrement.
 
 ## Spark
-Pour spark actuellement il faut lancer le script via la commande suivante:
+Pour spark il faut d'abord compiler le code `Scala` puis déplacer le `jar` dans le edge-NodeJS
+Ensuite il faut déplacer le script `run_script.sh` dans le edge-node puis créer la variable d'environnement `LAST_TIMESTAMP` et la set a "0"
+Enfin il faut lancer le script via la commande suivante:
 ```shell
 source run_spark.sh
 ```
