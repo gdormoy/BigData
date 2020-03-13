@@ -34,7 +34,7 @@ Pour la récupération des tweets vous devez suivres les étapes suivantes dans 
   ```
 
 ## Envoi des tweets vers HDFS
-L'envoi des tweets dans HDFS se fait via un script bash qui est ensuite executé régulièrement grace à un `cron`, son installation se fait via les étapes suivantes:
+L'envoi des tweets dans HDFS se fait via un script bash qui va renommer les fichiers contenant les tweets en ajoutant un timestamp dans le nom du fichier avant de l'envoyer, ensuite il sera executé régulièrement grace à un `cron`, son installation se fait via les étapes suivantes:
 1. Récupérer le script `send_file.sh`
 2. Déposer le script sur le même edge node que les scripts NodeJS
   ```shell
